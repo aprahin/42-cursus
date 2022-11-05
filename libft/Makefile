@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: aprahin <marvin@42lausanne.ch>             +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2022/11/05 11:32:22 by aprahin           #+#    #+#              #
+#    Updated: 2022/11/05 11:32:28 by aprahin          ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 CFLAGS	= -Wall -Wextra -Werror -c
 
 NAME	= libft.a
@@ -22,4 +34,4 @@ fclean:		clean
 
 re:			fclean all
 
-.PHONY:		all clean fclean reg
+.PHONY:		all clean fclean re
