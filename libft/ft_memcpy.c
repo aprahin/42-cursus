@@ -11,19 +11,14 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <signal.h>
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	char			*s;
 	unsigned char	*p;
 	unsigned char	*q;
 
-	if (!dst && !src)
-		return (0);
-	s = "";
-	if (!dst || !src)
-		s[1] = 'a';
+	if (src == dst) 
+		return (dst);
 	p = dst;
 	q = (void *) src;
 	while (n > 0)
