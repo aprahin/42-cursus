@@ -6,7 +6,7 @@
 /*   By: aprahin <marvin@42lausanne.ch>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 13:07:19 by aprahin           #+#    #+#             */
-/*   Updated: 2022/10/29 16:03:23 by aprahin          ###   ########.fr       */
+/*   Updated: 2022/11/05 11:04:37 by aprahin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,6 +80,12 @@ char	*ft_strtrim(char const *s1, char const *set)
 	int		j;
 	size_t	end;
 
+	if (s1[0] == '\0')
+	{
+		s = malloc(1);
+		s[0] = '\0';
+		return (s);
+	}
 	s = malloc((getlen(s1, set) + 1) * sizeof(char));
 	if (!s)
 		return (0);
