@@ -43,7 +43,7 @@ static char	*sdup(const char *src)
 	return (s);
 }
 
-void	setwidth(int *width, const char *s, int prec)
+static void	setwidth(int *width, const char *s, int prec)
 {
 	if (prec >= 0)
 		*width -= min(prec, ft_strlen(s));

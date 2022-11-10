@@ -13,7 +13,7 @@
 #include "libft.h"
 #include "ft_printf.h"
 
-void	ft_setwidth_putchar(const char *flags, int *width, char *s, int *l)
+static void	ft_setwidth_putchar(const char *flags, int *width, char *s, int *l)
 {
 	(*width) -= ft_strlen(s);
 	if ((ft_in('+', flags) || ft_in(' ', flags)))
