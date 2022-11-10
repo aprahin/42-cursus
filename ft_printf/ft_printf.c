@@ -12,7 +12,6 @@
 
 #include "libft.h"
 #include "ft_printf.h"
-#include <stdio.h>
 
 static void	getflags(const char *f, char **flags, unsigned int *i)
 {
