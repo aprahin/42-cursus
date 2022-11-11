@@ -70,7 +70,7 @@ int	ft_printstr(const char *flags, int width, int prec, va_list args)
 	if (!s)
 		return (0);
 	setwidth(&width, s, prec);
-	if (!ft_in('-', flags) && width-- > 0)
+	while (!ft_in('-', flags) && width-- > 0)
 		l += ft_putchar(' ');
 	while (prec-- != 0 && s[i] != '\0')
 		l += ft_putchar(s[i++]);
