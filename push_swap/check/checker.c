@@ -28,7 +28,7 @@ static int	checkargerr(int i)
 int	main(int argc, char **argv)
 {
 	int		l;
-	char	*moves[69420];
+	char	*moves[65535];
 	t_stack	*a;
 	t_stack	*b;
 
