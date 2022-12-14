@@ -110,9 +110,7 @@ char	**ft_split(char const *s, char c)
 {
 	char	**t;
 	size_t	n;
-	int		i;
 
-	i = 0;
 	n = count_str(s, c);
 	t = malloc(sizeof(char *) * (n + 1));
 	if (!t)
